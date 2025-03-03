@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+
+\title{Neural Network from scratch with NumPy for MNIST}
+\author{
+    Akbar Tangirov\\
+    Department of Electrical and Computer Engineering\\
+    Ajou University in Tashkent\\
+    \texttt{202290398@ajou.uz}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In this report, we describe the development of a neural network built from the ground up, using only NumPy to train and test on the MNIST dataset. This approach demonstrates a fundamental understanding of deep learning concepts without relying on high-level machine learning frameworks.
+\end{abstract}
+
+\section{Introduction}
+The MNIST dataset is a benchmark dataset consisting of $28 \times 28$ pixel handwritten digits. Our project aims to implement and understand each component of a neural network, including forward propagation, loss calculation, backpropagation, and parameter updates. 
+
+\section{Methodology}
+\subsection{Data Preparation}
+We load the MNIST data, normalize it, and reshape images for input into the network. 
+
+\subsection{Network Architecture}
+Our network includes an input layer, one or more hidden layers, and an output layer. We use common activation functions such as ReLU or Sigmoid, depending on requirements.
+
+\subsection{Training Process}
+We apply mean squared error or cross-entropy loss, then compute gradients during backpropagation. Model parameters are updated using gradient descent.
+
+\section{Results}
+After training, the model’s accuracy on the MNIST test set is evaluated. We present a summary of key metrics, confusion matrices, and example predictions.
+
+\section{Conclusion}
+Building a neural network from scratch with NumPy deepens understanding of matrix operations, gradient-based optimizations, and the fundamentals of deep learning.
+
+\end{document}
